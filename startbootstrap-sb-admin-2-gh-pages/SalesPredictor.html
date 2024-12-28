@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SalesPredictor</title>
+    <link rel = "stylesheet" href ="css/salesPredictor.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h2>STORE</h2>
+            <p>Sales Predictor</p>
+        </div>
+        <div class="inputs">
+            <input type="number" id="year" name="year" min="1900" max="2100" placeholder="Year" required>
+            <input type="number" id = "month" placeholder="Month" required>
+
+
+                <button onclick="Predict()" id = "Predict">Predict</button>
+
+        </div>
+
+        <pre class="outputs">
+                <p class="text-center" id="prediction">Prediction here...</p>
+        </pre>
+ 
+    </div>
+    <script src = "js/salesPredictor.js"></script>
+</body>
+</html>

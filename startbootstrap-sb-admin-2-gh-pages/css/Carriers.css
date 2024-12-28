@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #ebe8e8;
+    color: #4d4d4d;
+    font-family: system-ui;
+
+
+}
+.container
+{
+    width: 80%;
+    margin: auto;
+
+}
+.head
+{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+input
+{
+    width: 50%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: #4d4d4d;
+    margin: 4px 0;
+    border-radius:  10px;
+    padding: 4px;
+    color: #fff;
+    margin-top: 1rem;
+}
+input:focus{
+    background: #323131;
+    transform: scale(1.01);
+}
+input::placeholder
+{
+    color:#ebe8e8; 
+    opacity: 1;
+}
+.inputs{
+    margin-top: 1rem;
+    display: grid;
+    place-items: center;
+}
+.searchBlock{
+    margin-top: 1rem;
+    display: grid;
+    place-items: center;
+}
+.btnSearch{
+  
+   width: 50%;
+}
+#deleteAll
+{
+    margin: 20px 0;
+}
+button
+{
+    width: 50%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #0845fe8c;
+    color: white;
+    border-radius: 10px;
+    transform: scale(1.01);
+    transition: 0.5s;
+    margin-top: 1rem;
+}
+button:hover{
+    background-color:  #0877fe8c;
+    letter-spacing: 1px;
+}
+.btnSearch
+{
+    display: flex;
+    justify-content: space-between;
+}
+.btnSearch button
+{
+    width: 45%;
+}
+table
+{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+padding: 50px;
+}
+table th{
+    text-transform: uppercase;
+}
+th,td{
+    padding: 5px;
+}
+.tableButton{
+    width: 6rem;
+}
+#categoryTable{
+    margin-bottom: 1rem;
+}
+.searchBlock{
+    margin-bottom: 1rem;
+}
+.confirm-button-class{
+    border-radius: 10px;
+    width: 8rem;
+    margin-inline-end: 2rem;
+    background-color:#007bff;
+   }
+   .cancel-button-class{
+     border-radius: 10px;
+     width: 8rem;
+     background-color:#f13252;
+   }
+   .cancel-button-class:hover{
+     background-color:#d95b70; 
+   }

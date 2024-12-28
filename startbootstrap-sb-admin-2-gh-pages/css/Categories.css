@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #fefefe;
+    color: #4d4d4d;
+    font-family: system-ui;
+
+
+}
+.container
+{
+    width: 80%;
+    margin: auto;
+
+}
+.head
+{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+input
+{
+    width: 50%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: #4d4d4d;
+    margin: 4px 0;
+    border-radius:  10px;
+    padding: 4px;
+    color: #fff;
+    margin-top: 1rem;
+}
+input:focus{
+    background: #323131;
+    transform: scale(1.01);
+}
+input::placeholder
+{
+    color:#ebe8e8; 
+    opacity: 1;
+}
+.inputs{
+    margin-top: 1rem;
+    display: grid;
+    place-items: center;
+}
+#deleteAll
+{
+    margin: 20px 0;
+}
+button
+{
+    width: 50%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #0845fe8c;
+    color: white;
+    border-radius: 10px;
+    transform: scale(1.01);
+    transition: 0.5s;
+    margin-top: 1rem;
+}
+.tableButton{
+    width: 100%;
+}
+
+button:hover{
+    background-color:  #0877fe8c;
+    letter-spacing: 1px;
+}
+table
+{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+padding: 50px;
+}
+table th{
+    text-transform: uppercase;
+}
+th,td{
+    padding: 5px;
+}
+
+.subCategories-container{
+    border: 0;
+    box-shadow: 0 0 1em rgb(0 0 0/.3);
+    border-radius: 20px;
+    padding: 2rem;
+    position: fixed; /* Ensure the modal is positioned relative to the viewport */
+    top: 50%; /* Position from the top */
+    left: 50%; /* Position from the left */
+    transform: translate(-50%, -50%); /* Center the element */
+  
+    
+}
+.subCategories-container::backdrop
+{
+background:rgb(0 0 0/.4);
+}
+#subCategoryInput{
+width: 100%;  
+padding: 8px;
+margin-right: 5px;
+border: 1px solid #ccc;
+border-radius: 5px;
+flex: 1;
+           
+}
+#addSubCategoryBtn {
+    width: 2rem;
+    padding-bottom: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .subcategoryInput {
+    display: flex;
+    align-items: center;
+  }
+  .label {
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin: 5px;
+    background: #dddddd;
+    display: inline-block;
+  }
+  .label:hover {
+    background: #5cbd95;
+  }
+  .label:active {
+    background: #9fa1a0;
+  }
+  .label:invalid+span {
+    color: #000000;
+  }
+  .label:valid+span {
+    color: #ffffff;
+  }
+  .imageContainer {
+    display: inline-block;
+    margin: 10px;
+    position: relative; 
+}
+.delete-btn {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    padding-bottom: 5px;
+    border-radius: 50%;
+  }
+  label.label input[type="file"] {
+    position: absolute;
+    opacity: 0;
+  }
+  .image-container {
+    display: inline-block;
+    margin: 5px;
+    position: relative;
+  }
+  .image-container img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  #categoryTable{
+    margin-bottom: 1rem;
+    height: 20rem;
+    overflow: auto; 
+}
+#submit{
+  margin-bottom: 1rem;
+}

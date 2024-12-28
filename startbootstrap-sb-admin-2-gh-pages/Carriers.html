@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Carriers</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/> 
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel = "stylesheet" href ="css/Carriers.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h2>STORE</h2>
+            <p>CARRIERS MANAGMENT SYSTEM</p>
+        </div>
+        <div class="inputs">
+            <input placeholder="name" type="text" id="name" required>
+            <input placeholder="phone" type="tel" id="phone" name="phone" pattern="[+]{1}[0-9]{11,14}" required>
+            <input placeholder="email" type="email" id="email" name="email" required>
+            <input placeholder="userName" type="text" id="username" required>
+            <input placeholder="password" type="text" id="password" required>
+
+
+            <button id = "submit">Add</button>
+        </div>
+
+        <div class="outputs">
+            <div class="searchBlock">
+                <input onkeyup ="Search(this.value)" type="text" id = "search" placeholder="search by Name">
+                <div class="btnSearch">
+                    <button onclick="SearchBy(this.id)" id ="searchName">Serch by Name</button>
+                    <button onclick="SearchBy(this.id)" id ="searchUserName">Serch by UserName</button>
+                </div>
+            </div>
+       
+        </div>
+
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Carriers Table</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive" id="categoryTable">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                            <th>UserName</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                        <tbody id ="tbody">
+                  
+                        </tbody>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                            <th>UserName</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </tfoot>
+                  
+                </table>
+            </div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src = "js/Carriers.js"></script>
+</body>
+</html>

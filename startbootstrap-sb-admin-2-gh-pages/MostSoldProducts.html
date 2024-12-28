@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MostSoldProducts</title>
+</head>
+    <link rel = "stylesheet" href ="css/MostSoldProducts.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h2>STORE</h2>
+            <p>Most Sold Products</p>
+        </div>
+        <div class="inputs">
+
+
+<label for="dateFrom">Choose a date from: <input id="dateFrom" type="date" required></label>
+<label for="dateTo" class="label-date">Choose a date to: <input id="dateTo" type="date" required></label>
+            <button onclick="fetchMostSoldProducts()" id = "submit">Search</button>
+        </div>
+
+
+        <table class="table table-bordered" id="productsTable">
+            <tr>
+                <th>ProductID</th>
+                <th>ProductName</th>
+                <th>Frequancy</th>
+
+            </tr>
+            <tbody id ="tbody">
+      
+            </tbody>
+        </table>
+    </div>
+    <script src = "js/MostSoldProducts.js"></script>
+</body>
+</html>

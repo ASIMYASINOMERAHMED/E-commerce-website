@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #ebe8e8;
+    color: #4d4d4d;
+    font-family: system-ui;
+
+}
+#submit{
+   width: 30%;
+   display: block;
+   margin: 2rem auto;
+
+}
+button
+{
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #0845fe8c;
+    color: white;
+    border-radius: 10px;
+    transform: scale(1.01);
+    transition: 0.5s;
+    margin-top: 4rem;
+}
+button:hover{
+    background-color:  #0877fe8c;
+    letter-spacing: 1px;
+}
+.container
+{
+    width: 80%;
+    margin: auto;
+
+}
+.head
+{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+input
+{
+width: 20%;
+height: 30px;
+outline: none;
+border: none;
+background: #575454;
+margin: 4px 0;
+border-radius: 10px;
+padding: 4px;
+color: #fff;
+margin-top: 3rem;
+}
+input:focus{
+background: #000;
+transform: scale(1.01);
+}
+table
+{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+padding: 50px;
+}
+table th{
+    text-transform: uppercase;
+}
+th,td{
+    padding: 5px;
+}
+.label-date {
+    margin-left: 10rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .inputs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        width: 100%;
+        margin: 8px 0;
+    }
+    .label-date {
+        margin-left: 0;
+    }
+}
