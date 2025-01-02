@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/> 
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel = "stylesheet" href ="css/ManageProducts.css">
+</head>
+<body>
+    <div class="curd">
+        <div class="head">
+            <h2>STORE</h2>
+            <p>PRODUCT MANAGMENT SYSTEM</p>
+        </div>
+        <div class="inputs">
+            <input placeholder="product title" type="text" id="title">
+            <div class="price">
+                <input onkeyup="getTotal()" type="number" id = "price" placeholder="product price">
+                <input onkeyup="getTotal()" type="number" id = "taxes" placeholder="taxes">
+                <input onkeyup="getTotal()" type="number" id = "ads" placeholder="ads">
+                <input onkeyup="getTotal()" type="number" id = "discount" placeholder="discount">
+                <small id="total">[???]</small>
+            </div>
+            <input type="number" id = "count" placeholder="quantity in stock">
+            <select onchange="fetchSubCategoriesInDropDown(this.value)" id="dropdownCategories">
+               <option value="0">--SELECT CATEGORY--</option>
+            </select>
+            <select id="dropdownSubCategories">
+                <option value="0">--SELECT SUBCATEGORY--</option>
+            </select>
+            <input type="text" id = "shortDescription" placeholder="short description">
+            <textarea rows="4" cols="50" id = "longDescription" style="height: 10rem;" placeholder="long description"></textarea>
+
+            <div class="tag-input">
+                <input type="text" id="colorTagInput" placeholder="Add Product colors">
+                <button onclick="addColor()" id="addColorBtn">+</button>
+              </div>
+              <div class="tags-container" id="colorTagsContainer"></div>
+              <div class="tag-input">
+                <input type="text" id="sizeTagInput" placeholder="Add Product size">
+                <button onclick="addSize()" id="addSizeBtn">+</button>
+              </div>
+              <div class="tags-container" id="sizeTagsContainer"></div>
+              <label class="label">
+                <input type="file" id="ProductThumbnail" required>
+                <span>Select Product Thumbnail</span>
+            </label>
+            <div id="thumbnailContainer"></div>
+            <label class="label">
+                <input type="file" id="ProductImages" multiple required>
+                <span>Select Product Images</span>
+            </label>
+            <div id="imageGrid"></div>
+            <label class="label">
+            <input type="file" id="videoFile" accept=".mp4, .mov, .avi" required>
+            <span>Select Product Video</span>
+         </label>
+         <div id="videoContainer"></div>
+    
+
+            <button id = "submit">Add</button>
+        </div>
+
+        <div class="outputs">
+            <div class="searchBlock">
+                <input onkeyup ="Search(this.value)" type="text" id = "search" placeholder="search by title">
+                <div class="btnSearch">
+                    <button onclick="SearchBy(this.id)" id ="serchTitle">Serch by Title</button>
+                    <button onclick="SearchBy(this.id)" id ="serchCategory">Serch by CategoryID</button>
+                </div>
+            </div>
+       
+        </div>
+ 
+
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Products Table</h6>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Title</th>
+                                <th>Price</th>
+                                <th>discount</th>
+                                <th>Quantity</th>
+                                <th>category</th>
+                                <th>SubCategory</th>
+                                <th>update</th>
+                                <th>delete</th>
+                            </tr>
+                            <tbody id ="tbody">
+                      
+                            </tbody>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <th>ID</th>
+                                <th>Title</th>
+                                <th>Price</th>
+                                <th>discount</th>
+                                <th>Quantity</th>
+                                <th>category</th>
+                                <th>SubCategory</th>
+                                <th>update</th>
+                                <th>delete</th>
+                            </tr>
+                        </tfoot>
+                      
+                    </table>
+                </div>
+                <div class="pagination">
+                
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/datatables-demo.js"></script>
+
+    <script src = "js/ManageProducts.js"></script>
+</body>
+</html>
