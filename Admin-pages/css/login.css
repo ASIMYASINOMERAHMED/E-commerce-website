@@ -1,0 +1,14 @@
+#roleDropdown
+{
+    margin-bottom:1rem ;
+}
+#loginImage{
+    background-image: url("vector-shopping-online-banner.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position:right;
+    background-position-x:70%;
+}
+body{
+    background: #E5E5E5;  
+}

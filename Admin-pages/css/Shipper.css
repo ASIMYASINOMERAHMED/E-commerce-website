@@ -1,0 +1,103 @@
+
+#mainContent{
+    height: 90%;
+    width: 100%;
+}
+.tableButton
+{
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #0845fe8c;
+    color: white;
+    border-radius: 10px;
+    transform: scale(1.01);
+    transition: 0.5s;
+}
+.tableButton:hover{
+    background-color:  #0877fe8c;
+    letter-spacing: 1px;
+}
+.button{
+    margin-left: 100px;
+    background-color: rgb(126, 130, 133);
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+    transform: translateY(3px);
+    box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4) inset 0px -5px 15px rgba(255,255,255,0.4);
+
+}
+.button::before
+{
+    position: absolute;
+    content: '';
+    background-color: aliceblue;
+    width: 16px;
+    height: 16px;
+    border-radius: 20px;
+    margin: 2px;
+    transition: 0.2s;
+
+}
+#toggleCheck:checked + .button
+{
+background-color: rgb(10, 110, 250)
+}
+#toggleCheck:checked + .button::before
+{
+    transform: translateX(20px);
+}
+#toggleCheck
+{
+    display: none;
+}
+
+.label-text {
+    
+    transform: translate(10px,-30px);
+}
+#toggleContainer
+{
+    height: 30px;
+}
+#colorPicker{
+    margin: 1rem;
+    width: 90%;
+   text-align: right;
+   
+}
+#colorPicker span{
+    position: absolute;
+    transform: translate(-130px,-10px);
+  
+}
+.details-container,#profileContainer{
+    border: 0;
+    box-shadow: 0 0 1em rgb(0 0 0/.3);
+    border-radius: 20px;
+}
+.details-container::backdrop,#profileContainer::backdrop
+{
+background:rgb(0 0 0/.4);
+
+}
+.button-wrapper 
+{ 
+    display: flex; 
+    gap: 10px; 
+} 
+.tableButton 
+{ 
+    margin: 0;
+}
+#deliverBtn,#cancelBtn{
+    width: 6rem;
+}
+#updateBtn{
+    margin-left: 1rem;
+    }

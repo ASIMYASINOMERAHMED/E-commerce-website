@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #fefefe;
+    color: #4d4d4d;
+    font-family: system-ui;
+    overflow-x: hidden;
+}
+.curd
+{
+    width: 80%;
+    margin: auto;
+
+}
+.head
+{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+textarea::placeholder {
+    font-family: sans-serif;
+  }
+ 
+input,textarea
+{
+width: 100%;
+height: 30px;
+outline: none;
+border: none;
+background: #4d4d4d;
+margin: 4px 0;
+border-radius:  10px;
+padding: 4px;
+color: #fff;
+}
+input:focus{
+    background: #323131;
+    transform: scale(1.01);
+}
+input::placeholder,textarea::placeholder
+{
+    color:#ebe8e8; 
+    opacity: 1;
+}
+.price input
+{
+    width: 20%;
+}
+#total
+{
+    background: #fe0808;
+    padding: 5px 2px;
+    border-radius: 10px;
+    color: #ebe8e8;
+
+}
+#total::before
+{
+    content: 'Total: ';
+}
+#deleteAll
+{
+    margin: 20px 0;
+}
+button
+{
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #0845fe8c;
+    color: white;
+    border-radius: 10px;
+    transform: scale(1.01);
+    transition: 0.5s;
+}
+button:hover{
+    background-color:  #0877fe8c;
+    letter-spacing: 1px;
+}
+.btnSearch
+{
+    display: flex;
+    justify-content: space-between;
+}
+.btnSearch button
+{
+    width: 45%;
+}
+table
+{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+padding: 50px;
+}
+table th{
+    text-transform: uppercase;
+}
+th,td{
+    padding: 5px;
+}
+#Edit,#Delete{
+  width: 6rem;
+}
+#dropdownCategories,#dropdownSubCategories{
+width: 100%;
+display: block;
+color: #fff;
+background: #4d4d4d; 
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 10px;
+font-size: 16px;
+margin-bottom: .5rem;
+margin-top: .5rem;
+}
+
+.image-container {
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+  }
+
+  .image-container img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+.video-container {
+    display: inline-block;
+    margin: 10px;
+    position: relative; 
+}
+  .delete-btn {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    padding-bottom: 1rem;
+    border-radius: 50%;
+  }
+  label.label input[type="file"] {
+    position: absolute;
+    opacity: 0;
+  }
+ 
+  .label {
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin: 5px;
+    background: #dddddd;
+    display: inline-block;
+  }
+  .label:hover {
+    background: #5cbd95;
+  }
+  .label:active {
+    background: #9fa1a0;
+  }
+  .label:invalid+span {
+    color: #000000;
+  }
+  .label:valid+span {
+    color: #ffffff;
+  }
+
+
+  .tag-input {
+    display: flex;
+    align-items: center;
+  }
+  
+  #colorTagInput,#sizeTagInput {
+    padding: 8px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+  }
+  
+  #addColorBtn,#addSizeBtn {
+    width: 2rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  
+  .tag {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  .outputs{
+    margin-bottom: 2rem;
+  }
+
+
+  .pagination{
+    text-align: center;
+    display: flex;
+    justify-content:center;
+}
+.pagination a{
+    color: #cccccc;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+}
+.pagination a.active{
+    background-color: hsl(226, 72%, 57%);
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.pagination a:hover:not(.active){
+    background-color: hsla(0, 10%, 84%, 0.503);
+    border-radius: 5px;
+}
+.confirm-button-class{
+ border-radius: 10px;
+ margin-bottom: 2rem;
+ background-color:#007bff;
+}
+.cancel-button-class{
+  border-radius: 10px;
+  background-color:#f13252;
+}
+.cancel-button-class:hover{
+  background-color:#d95b70; 
+}
