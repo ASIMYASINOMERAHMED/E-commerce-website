@@ -1,9 +1,9 @@
-### lacostor<sub>e</sub> e-commerce website developed with C#, HTML, CSS, and JavaScript, connected through robust APIs and SQL Server for database management. The site features Customer, User, and Shipper interfaces, predictive sales insights, and a seamless checkout process, ensuring a user-friendly experience.
+### lacostore e-commerce website developed with C#, HTML, CSS, and JavaScript, connected through robust APIs and SQL Server for database management. The site features Customer, User, and Shipper interfaces, predictive sales insights, and a seamless checkout process, ensuring a user-friendly experience.
 
 #### The login screen includes an input element where users can choose to log in either as a User or as a Shipper:
 ![Login](https://github.com/user-attachments/assets/f81f3493-c6a7-4271-b7cf-f14dad5ec71f)
 ### User Interface:
-#### User Dashboard:
+#### Dashboard:
 ![UserInterface](https://github.com/user-attachments/assets/c98bb94d-7b83-4f39-a4a5-bebf6262c6ad)
 #### Orders:
 ![Orders](https://github.com/user-attachments/assets/6858b300-c6f7-4bb3-9273-8218a3485489)
@@ -50,6 +50,8 @@
 ![SideMenue](https://github.com/user-attachments/assets/98556a66-8d90-4d41-8fc3-42e9a5a0923f)
 #### Product Details:
 ![Product](https://github.com/user-attachments/assets/974a9405-3bd6-4594-911a-d19acec2fb32)
+#### Rating & Reviews:
+![Rating Reviews](https://github.com/user-attachments/assets/c8b29763-e395-45cf-a462-48015e3a36c9)
 #### Similar Products:
 ![SimilarProducts](https://github.com/user-attachments/assets/94d13e12-7910-4eef-bd4f-dba8f2076c45)
 #### Sign Up Page:
