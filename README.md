@@ -8,7 +8,7 @@
 #### Orders:
 ![Orders](https://github.com/user-attachments/assets/6858b300-c6f7-4bb3-9273-8218a3485489)
 #### Order Details:
-
+![OrderDetails](https://github.com/user-attachments/assets/6bcf3125-4486-4465-b681-3c19f90cf272)
 #### Shipping Details:
 ![shippingDetails](https://github.com/user-attachments/assets/cea65bef-542f-423e-b769-e745baf79a50)
 #### Messages:
