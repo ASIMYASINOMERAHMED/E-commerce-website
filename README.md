@@ -37,8 +37,8 @@
 #### Report:
 ![Report](https://github.com/user-attachments/assets/529aeb02-dce3-4d62-97b4-8253402d9ac1)
 ### Shipper Interface:
-![ShippingOrder](https://github.com/user-attachments/assets/ea3321c1-1cf7-4046-b72f-98e8618af7e7)
-![DeliverdOrders](https://github.com/user-attachments/assets/6fedb172-c3ed-48a7-a1bc-344661c70ab8)
+![ShippingOrders](https://github.com/user-attachments/assets/78ce1bae-ee92-45a5-bdcc-f8eba7bcc97c)
+![DeliverdOrders](https://github.com/user-attachments/assets/c4dabd5d-b5d0-4f75-8493-757a737a710e)
 ### Customer Interface:
 #### Featured Products:
 ![FeaturedProducts](https://github.com/user-attachments/assets/fb3ad345-a223-404f-86e1-b685c9a02377)
