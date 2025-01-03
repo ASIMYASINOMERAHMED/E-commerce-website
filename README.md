@@ -34,7 +34,7 @@
 ![TopSellingProducts](https://github.com/user-attachments/assets/4296fe33-0c42-4ee5-acdc-cb6c736d3203)
 #### Sales Predictor:
 ![SalesPredictor](https://github.com/user-attachments/assets/1513670e-d5ce-4fd7-a31d-cf392e712f39)
-#### Report:
+#### Sales Activity Report:
 ![Report](https://github.com/user-attachments/assets/529aeb02-dce3-4d62-97b4-8253402d9ac1)
 ### Shipper Interface:
 ![ShippingOrders](https://github.com/user-attachments/assets/78ce1bae-ee92-45a5-bdcc-f8eba7bcc97c)
